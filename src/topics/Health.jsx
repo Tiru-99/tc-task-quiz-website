@@ -4,18 +4,7 @@ import { useEffect } from 'react';
 
 const Health = () => {
 
-  const bodyStyle = {
-    backgroundImage: 'url("food background.jpg")',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    height: '100vh', // Adjust the height as needed
-    margin: 0, // Remove default margin
-    padding: 0, // Remove default padding
-    display: 'flex',
-    flexDirection: 'column', // Optional: Set the layout direction
-    alignItems: 'center', // Optional: Center content horizontally
-    justifyContent: 'center', // Optional: Center content vertically
-  };
+
     const questions = [
         {
           question: 'What is the recommended daily water intake for adults?',
@@ -98,7 +87,7 @@ const Health = () => {
   }, []);
 
   return (
-    <div className='main-quiz-box' style={bodyStyle}>
+    <div className='main-quiz-box'>
       <h1 className='questions'>{questions[currentQuestion].question}</h1>
       <div className='options'>
         {questions[currentQuestion].options.map((option, index) => (
