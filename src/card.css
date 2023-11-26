@@ -1,0 +1,33 @@
+*{
+    padding:0; 
+    margin:0; 
+
+}
+
+.Card img{
+    height:150px; 
+    width:150px; 
+}
+.Card{
+    font-family: 'Josefin Sans',sans-serif;
+    border:2px solid lightgray; 
+    margin-left:10px; 
+    width:160px;
+    padding-left:5px; 
+    padding-right:5px; 
+    padding-top:5px; 
+    padding-bottom:15px; 
+    margin-top:10px; 
+    border-radius:12px;
+    transition: transform 0.2s ease;
+}
+
+.Card h3{
+    text-align: center;
+}
+
+.Card:hover{
+    transform:scale(1.1);
+     box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.2);
+    
+}

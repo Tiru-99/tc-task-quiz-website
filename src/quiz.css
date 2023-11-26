@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Kanit:wght@500&display=swap');
+*{
+    padding:0; 
+    margin:0; 
+}
+
+
+.main-quiz-box{
+    margin-left:37%; 
+    z-index: 99;
+    width:400px; 
+    height:570px;
+    margin-top:7%; 
+    border-radius:12px; 
+    font-family: 'Josefin Sans',sans-serif;
+    background-color: white;
+    border:solid 2px lightgray; 
+    
+    ;
+   
+
+   
+}
+
+.questions{
+    padding-top:15px; 
+    padding-left:7px; 
+}
+.questions{
+    font-size:30px; 
+}
+.options{
+    padding-top:20px; 
+}
+
+.ind-options{
+    border:1px solid lightgray; 
+    height: 44px ; 
+    width:360px; 
+    border-radius:5px; 
+    margin-top:10px; 
+    margin-left:10px; 
+    font-size: 22px; ;
+    padding-top:13px; 
+    padding-left:5px; 
+    
+   
+}
+
+.label{
+   
+    margin-left: 8px; 
+}
+
+.ind-options:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+    border:1px solid black;
+
+    ;
+}
+.ind-options input[type="radio"] {
+    display: none; /* Hide the default radio button */
+}
+
+.ind-options input[type="radio"] + .label::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid lightgray;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.ind-options input[type="radio"]:checked + .label::before {
+    background-color: white; /* Change this to the desired color for the selected radio button */
+    border-color: blue; /* Change this to the desired color for the border of the selected radio button */
+}
+
+.corr-incorr{
+    font-size:25px;
+    font-weight: bold;
+    padding-top:20px; 
+    padding-left:10px; 
+}
+
+.next-ques-btn{
+    text-align:center; 
+    font-size:20px; 
+    height:30px; 
+    width:200px; 
+    background-color:#3F00FF;
+    border-radius:5px; 
+    color:white; 
+    font-family:'Josefin-Sans',sans-serif; 
+    margin-left:10px; 
+    margin-top:20px; 
+}
+.score-display{
+    font-size: 25px;
+    padding-top:25px;
+    font-weight:bold; 
+    padding-left:10px;
+    color: red;
+     
+}
+.score-message{
+    font-size:23px; 
+    padding-top:25px; 
+    text-align:center; 
+    font-weight:bold; 
+}
+.goback{
+   padding-left:138px; 
+   padding-top:20px; 
+
+}
+.goback button{
+   height:30px; 
+   width:120px; 
+   background-color: violet;
+   color:white; 
+   border-radius:10px; 
+  
+}
+@media screen and (max-width:600px){
+
+    .main-quiz-box{
+        margin-left:45px; 
+        width:300px; 
+        height:500px; 
+    }
+
+    .ind-options{
+        width:260px; 
+        height:30px; 
+    }
+
+    .goback{
+        display: flex;
+        justify-content: flex-start;
+        margin-top:20px;
+        margin-left: 10px; 
+        
+    }
+}

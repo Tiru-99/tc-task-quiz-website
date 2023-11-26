@@ -1,0 +1,333 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Kanit:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Kanit:wght@500&family=Lilita+One&display=swap');
+
+*{
+    padding:0 ; 
+    margin:0; 
+
+}
+
+
+
+.navbar{
+    display:flex; 
+    justify-content:space-between;
+}
+
+
+
+.nav-elements{
+    display:flex; 
+    justify-content:space-between;
+     padding-left:100px; 
+    
+     padding-right:50px; 
+}
+
+.Quizzy{
+    padding-left:50px; 
+    font-family: 'Josefin Sans' , sans-serif;
+    font-size:30px; 
+    padding-top:10px; 
+   
+}
+
+.quizzy h1:hover{
+  cursor:pointer;
+}
+
+.nav-elements h2{
+    font-family: 'Josefin Sans' , sans-serif;
+    font-weight:bolder;
+    margin-left:15px; 
+    margin-right:15px; 
+    font-size:20px; 
+}
+
+.hello-user{
+    text-align: center;
+    font-family:'Josefin Sans' , sans-serif;
+    padding-top:50px; 
+    font-size:30px; 
+}
+.underline{
+    border:1px solid 	#00FFFF ; 
+    background-color:	#00FFFF ;
+    height:1px; 
+    width:200px; 
+    margin-left:656px;  
+}
+
+.quiz-image{
+    padding-top:80px; 
+    margin-left:40px; 
+}
+
+.main-info{
+    display:flex; 
+
+}
+.quiz-tagline{
+    padding-top:200px; 
+  padding-left:150px; 
+  font-size:30px; 
+    font-family:'Josefin Sans', sans-serif;
+    position:relative; 
+   
+   
+}
+.quiz-tagline h1 {
+    font-weight: bolder;
+  }
+  
+  .quiz-tagline::before,
+  .quiz-tagline::after {
+    content: '"';
+    color:#FFEA00; /* Change this to the desired color for the quotation marks */
+  }
+  
+  .quiz-tagline::before {
+    position: absolute;
+    left:120px; /* Adjust the position of the opening quotation mark */
+    font-size:85px; 
+    
+    
+  }
+  
+  .quiz-tagline::after {
+    position: absolute;
+    right: -30px; /* Adjust the position of the closing quotation mark */
+    top:400px;
+    font-size: 85px;
+  }
+
+.quiz-tagline h1{
+    
+    font-weight:bolder;
+    
+}
+
+.knowledge{
+    
+    padding-left:20px; 
+    width:580px; 
+    background-color: #00FFAB;
+    margin-bottom:10px; 
+    border-radius:10px; 
+}
+.knowledge h1{
+    padding-top:10px; 
+}
+
+.take-quiz-btn{
+    padding-top:50px; 
+    text-align:center;
+
+  
+}
+
+button {
+    position: relative;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: filter 250ms;
+    user-select: none;
+    touch-action: manipulation;
+   }
+   
+   .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: hsl(0deg 0% 0% / 0.25);
+    will-change: transform;
+    transform: translateY(2px);
+    transition: transform
+       600ms
+       cubic-bezier(.3, .7, .4, 1);
+   }
+   
+   .edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: linear-gradient(
+       to left,
+       hsl(340deg 100% 16%) 0%,
+       hsl(340deg 100% 32%) 8%,
+       hsl(340deg 100% 32%) 92%,
+       hsl(340deg 100% 16%) 100%
+     );
+   }
+   
+   .front {
+    display: block;
+    position: relative;
+    padding: 12px 27px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    color: white;
+    background: hsl(345deg 100% 47%);
+    will-change: transform;
+    transform: translateY(-4px);
+    transition: transform
+       600ms
+       cubic-bezier(.3, .7, .4, 1);
+   }
+   
+   button:hover {
+    filter: brightness(110%);
+   }
+   
+   button:hover .front {
+    transform: translateY(-6px);
+    transition: transform
+       250ms
+       cubic-bezier(.3, .7, .4, 1.5);
+   }
+   
+   button:active .front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+   }
+   
+   button:hover .shadow {
+    transform: translateY(4px);
+    transition: transform
+       250ms
+       cubic-bezier(.3, .7, .4, 1.5);
+   }
+   
+   button:active .shadow {
+    transform: translateY(1px);
+    transition: transform 34ms;
+   }
+   
+   button:focus:not(:focus-visible) {
+    outline: none;
+   }
+
+   li { 
+    display: table-cell; 
+    position: relative; 
+    padding: 15px 0;
+    font-family: 'Josefin Sans',sans-serif;
+    font-weight: bold;
+  }
+  .nava {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  .nava:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .nava:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  @media screen and (max-height: 300px) {
+      ul {
+          margin-top: 40px;
+      }
+  }
+
+  .go-back-btn {
+    background-color: #4caf50; /* Green background color */
+    border: none; /* Remove borders */
+    color: white; /* White text color */
+    padding: 15px 32px; /* Padding for the button */
+    text-align: center; /* Center text */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; /* Add a pointer cursor on hover */
+  }
+
+  @media screen and (max-width:600px){
+  .navbar{
+    display:flex; 
+    justify-content: space-between;
+  }
+  .nav-elements{
+    margin-left:370px; 
+    justify-content: flex-start;
+    font-size:20px;
+     
+  }
+  a.nava{
+    width:130px; 
+  }
+
+  .hello-user{
+    padding-left:250px; 
+    padding-top:129px; 
+    width:500px; 
+}
+
+.underline{
+  margin-left: 100%;
+}
+.main-info{
+  display: flex;
+  flex-direction: column;
+  padding-top:20px;
+}
+.quiz-image{
+  padding-left:50%;
+}
+.quiz-tagline{
+ 
+  white-space: nowrap;
+  padding-left: 50%;
+  
+}
+
+.quiz-tagline::after {
+  position: absolute;
+  right: -600px; /* Adjust the position of the closing quotation mark */
+  top: 400px;
+  font-size: 85px;
+  content: '"';
+}
+
+.take-quiz-btn {
+  margin-top: 30%;
+  padding-left:430px ; 
+  white-space: nowrap;/* Reset margin-top */
+  
+}
+
+.take-quiz-btn button{
+  height:60px;
+
+}
+
+}
+  
